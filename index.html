@@ -70,17 +70,22 @@
     }
 
     html {
+      background: #000000;
       scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       color: var(--ink);
-      background: var(--surface);
+      background: #000000;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       letter-spacing: 0;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      background: var(--surface);
     }
 
     img {
@@ -244,34 +249,36 @@
 
     .hero-shot {
       position: absolute;
-      width: 260px;
+      width: 208px;
+      max-width: 22vw;
+      height: auto;
       aspect-ratio: 1320 / 2868;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 8px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       box-shadow: 0 30px 90px rgba(0, 0, 0, 0.62);
-      opacity: 0.8;
+      opacity: 0.84;
       transform-origin: center;
     }
 
     .hero-shot.one {
-      top: 92px;
-      right: 210px;
-      transform: rotate(-8deg);
+      top: 120px;
+      right: 176px;
+      transform: rotate(-7deg);
     }
 
     .hero-shot.two {
-      top: 152px;
-      right: 28px;
+      top: 176px;
+      right: 24px;
       transform: rotate(7deg);
-      opacity: 0.7;
+      opacity: 0.76;
     }
 
     .hero-shot.three {
-      bottom: -210px;
-      right: 350px;
-      transform: rotate(4deg);
-      opacity: 0.42;
+      bottom: -44px;
+      right: 366px;
+      transform: rotate(3deg);
+      opacity: 0.32;
     }
 
     .accent-line {
@@ -503,7 +510,7 @@
       overflow: hidden;
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
-      min-height: 560px;
+      min-height: 470px;
       border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.06);
@@ -528,7 +535,8 @@
       position: relative;
       min-height: 100%;
       display: grid;
-      place-items: end center;
+      place-items: center;
+      padding: 30px 22px;
       overflow: hidden;
       background:
         radial-gradient(circle at 50% 20%, rgba(255, 166, 98, 0.22), transparent 34%),
@@ -538,25 +546,24 @@
     .app-visual img {
       position: relative;
       z-index: 1;
-      width: 72%;
-      min-width: 178px;
-      max-width: 260px;
-      margin: 38px auto -18px;
+      width: auto;
+      max-width: 100%;
+      height: 360px;
       aspect-ratio: 1320 / 2868;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 8px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       box-shadow: var(--shadow);
-      transform: rotate(-3deg);
+      transform: rotate(-2deg);
       transition: transform 220ms ease;
     }
 
     .app-card:nth-child(2) .app-visual img {
-      transform: rotate(3deg);
+      transform: rotate(2deg);
     }
 
     .app-card:hover .app-visual img {
-      transform: translateY(-8px) rotate(0deg);
+      transform: translateY(-6px) rotate(0deg);
     }
 
     .app-content {
@@ -797,11 +804,16 @@
       }
 
       .hero-shot.one {
-        right: 120px;
+        right: 116px;
       }
 
       .hero-shot.two {
-        right: -66px;
+        right: 4px;
+      }
+
+      .hero-shot.three {
+        right: 278px;
+        bottom: -92px;
       }
 
       .app-card {
@@ -810,7 +822,11 @@
       }
 
       .app-visual {
-        min-height: 380px;
+        min-height: 312px;
+      }
+
+      .app-visual img {
+        height: 320px;
       }
     }
 
@@ -862,22 +878,25 @@
       }
 
       .hero-shot {
-        width: 190px;
-        opacity: 0.32;
+        width: 150px;
+        max-width: none;
+        opacity: 0.34;
       }
 
       .hero-shot.one {
         top: 118px;
-        right: -24px;
+        right: 54px;
       }
 
       .hero-shot.two {
-        top: 330px;
-        right: 58px;
+        top: 276px;
+        right: -6px;
       }
 
       .hero-shot.three {
-        display: none;
+        bottom: -58px;
+        right: 164px;
+        opacity: 0.18;
       }
 
       .accent-line {
@@ -948,12 +967,11 @@
       }
 
       .app-visual {
-        min-height: 330px;
+        min-height: 280px;
       }
 
       .app-visual img {
-        width: 58%;
-        min-width: 158px;
+        height: 266px;
       }
     }
   </style>
@@ -982,9 +1000,9 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
         <div class="hero-grid"></div>
-        <img class="hero-shot one" src="assets/lovio-app-screenshots/4.jpg" alt="" loading="eager" fetchpriority="high" width="1320" height="2868">
-        <img class="hero-shot two" src="assets/biblepause-app-screenshots/3.jpg" alt="" loading="eager" width="1320" height="2868">
-        <img class="hero-shot three" src="assets/lovio-app-screenshots/7.jpg" alt="" loading="lazy" width="1320" height="2868">
+        <img class="hero-shot one" src="assets/lovio-app-screenshots/6.jpg" alt="" loading="eager" fetchpriority="high" width="1320" height="2868">
+        <img class="hero-shot two" src="assets/lovio-app-screenshots/5.jpg" alt="" loading="eager" width="1320" height="2868">
+        <img class="hero-shot three" src="assets/lovio-app-screenshots/4.jpg" alt="" loading="lazy" width="1320" height="2868">
         <div class="accent-line"></div>
       </div>
       <div class="container">
@@ -1065,7 +1083,7 @@
 
           <article class="app-card reveal">
             <div class="app-visual">
-              <img src="assets/biblepause-app-screenshots/4.jpg" alt="Bible Pause app screenshot" loading="lazy" width="1320" height="2868">
+              <img src="assets/biblepause-app-screenshots/1.jpg" alt="Bible Pause app screenshot" loading="lazy" width="1320" height="2868">
             </div>
             <div class="app-content">
               <div>
@@ -1140,6 +1158,7 @@
           <div class="contact-row">
             <span>Email</span>
             <a href="mailto:datemateai.app@gmail.com">datemateai.app@gmail.com</a>
+            <a href="mailto:denielvarava@gmail.com">denielvarava@gmail.com</a>
           </div>
           <div class="contact-row">
             <span>Phone</span>
