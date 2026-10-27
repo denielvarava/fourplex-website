@@ -447,3 +447,115 @@ td:first-child {
     padding: 0;
   }
 }
+
+/* Uncover product page */
+.product-lede {
+  max-width: 640px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.product-body {
+  padding: 64px 0 96px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--line);
+}
+
+.feature-grid article {
+  padding: 26px;
+  background: #ffffff;
+}
+
+.feature-grid h2 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+.feature-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.link-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.link-cards a {
+  display: block;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.link-cards a:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.link-cards strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.link-cards span {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .feature-grid,
+  .link-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .product-body {
+    padding: 44px 0 72px;
+  }
+}
+
+/* Four nav links must fit a 375 px phone. */
+.nav-links {
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+@media (max-width: 560px) {
+  .nav-shell {
+    gap: 12px;
+  }
+
+  .brand-meta {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links a {
+    padding: 9px 9px;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+}
