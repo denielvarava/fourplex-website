@@ -33,7 +33,7 @@
     <div class="container">
       <p class="eyebrow">Uncover for iPhone</p>
       <h1 id="page-title">Privacy Policy</h1>
-      <p class="meta">Effective date: 26 October 2026</p>
+      <p class="meta">Effective date: 1 November 2026</p>
     </div>
   </section>
 
@@ -66,15 +66,15 @@
           <h2 id="summary-title">Summary</h2>
           <ul>
             <li><strong>No account.</strong> You never give us your name, email or password.</li>
-            <li><strong>Your map stays on your iPhone.</strong> Routes, coverage, places and history are kept in an encrypted database on your phone. We cannot see it.</li>
-            <li><strong>Your routes are never sent to us or anyone else.</strong> Only what a feature needs leaves your phone, such as a search term or the map area on screen.</li>
+            <li><strong>Your map is stored on your iPhone.</strong> Routes, coverage, places and history are kept in an encrypted database on your phone. Backups and exports leave it only when you choose them.</li>
+            <li><strong>We do not receive your recorded routes.</strong> Network features receive what they need, such as a search term, route start and end points, or the map area on screen. You can choose to share exports yourself.</li>
             <li><strong>No ads, no tracking, no data sales.</strong> We do not use the advertising identifier, and we do not sell or share your data for advertising.</li>
-            <li><strong>Analytics are optional.</strong> You can turn them off in Settings › Privacy &amp; data.</li>
+            <li><strong>Analytics are anonymous.</strong> Usage statistics use a random ID that changes every time you open the app, so they can't be connected to you or to your earlier sessions. You can turn them off in Settings › Privacy &amp; data.</li>
           </ul>
         </section>
 
         <h2 id="on-your-phone">1. What stays on your phone</h2>
-        <p>This data is stored only in an encrypted database on your iPhone. We cannot access it.</p>
+        <p>This data is kept in an encrypted database on your iPhone. Optional backups, exports and network features are described in <a href="#backups">sections 3</a> and <a href="#leaves-your-phone">4</a>.</p>
         <div class="table-wrap">
           <table>
             <thead>
@@ -95,18 +95,18 @@
         <p>Turn-by-turn voice prompts are spoken by your iPhone and are not sent anywhere. Reminders are local notifications created on your phone; we do not send push notifications.</p>
 
         <h2 id="apple-health">2. Apple Health data</h2>
-        <p>Uncover only reads the routes of the workouts you select, to draw them on your map. It never writes to Apple Health.</p>
+        <p>Uncover reads routes, dates and activity types from the workouts you select, to draw them on your map. It never writes to Apple Health.</p>
         <p>Health data:</p>
         <ul>
           <li>stays in the encrypted database on your phone;</li>
           <li>is never sent to us, our analytics or our subscription provider;</li>
           <li>is never used for advertising, marketing or analytics, or by any AI service;</li>
-          <li>is never sold or shared with anyone.</li>
+          <li>is never sold or automatically sent for place naming. If you export a local backup or share a map yourself, you control its destination.</li>
         </ul>
 
         <h2 id="backups">3. Backups and exports</h2>
-        <p>If you turn on <strong>iCloud Backup</strong>, an encrypted copy of your database is saved in your own iCloud Drive, protected by a password you choose. iCloud backups never include data imported from Apple Health; after restoring, you can import those workouts again. You can also export a backup file, GPX files or share images yourself. We cannot read your backups. Without the password, a backup cannot be restored. You can delete iCloud backups in iPhone Settings › [your name] › iCloud › Manage Storage.</p>
-        <p>Share images skip your home privacy zone and hidden areas and contain no location data. What you share, and with whom, is up to you.</p>
+        <p>If you turn on <strong>iCloud Backup</strong>, an encrypted copy of your database is saved in your own iCloud Drive, protected by a password you choose. This is how your map moves to a new iPhone: because the map can contain Apple Health data, it is not part of automatic iPhone backups. iCloud backups never include data imported from Apple Health; after restoring, you can import those workouts again. You can also export a backup file, GPX files or share images yourself. We cannot read your backups. Without the password, a backup cannot be restored. You can delete iCloud backups in iPhone Settings › [your name] › iCloud › Manage Storage.</p>
+        <p>Share images mask your home privacy zone when you have configured one, respect hidden areas and omit embedded location metadata. Visible map details can still identify places. What you share, and with whom, is up to you.</p>
 
         <h2 id="leaves-your-phone">4. What leaves your phone</h2>
         <p>Some features need to contact other services. Each one receives only what it needs.</p>
@@ -129,21 +129,22 @@
               <tr>
                 <td>Apple</td>
                 <td>Classic maps, search, directions, payments, iCloud</td>
-                <td>The map area you view, what you search for, route start and end points, purchases and backups. If "Name places I've been" is on: approximate centres of areas you visited, to name them. Apple processes this under <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">its own privacy policy</a>.</td>
+                <td>The map area you view, what you search for, route start and end points, purchases and backups. If "Name places I've been" is on (it is by default; you can turn it off in Settings › Privacy &amp; data): approximate centres of visited areas, excluding Apple Health imports, to name them. Apple processes this under <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">its own privacy policy</a>.</td>
               </tr>
               <tr>
                 <td>Superwall (USA)</td>
                 <td>Subscriptions, trials and paywalls</td>
-                <td>The random app ID, device model, iOS version, language, IP address, subscription status, the name of your home city and rounded progress numbers (for example, % of your city uncovered, number of cities visited).</td>
+                <td>A random app ID, device and network information, subscription status, paywall and purchase events, and the name of your home city (to personalise paywall text, for example "Uncover all of Riga"). We never send your routes, map progress or anything derived from Apple Health.</td>
               </tr>
               <tr>
                 <td>Amplitude (USA)</td>
-                <td>Usage analytics</td>
-                <td>The random app ID, device model, iOS version, app version and usage events in broad ranges (for example, "exploration finished, 3–5 km"). Your IP address is not stored.</td>
+                <td>Anonymous usage analytics</td>
+                <td>A random ID that changes every time you open the app (never your app ID), device model, iOS version, app version and usage events in broad ranges (for example, "exploration finished, 3–5 km"). Nothing is stored on your phone for analytics, and your IP address is not stored.</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p>When the Uncover map server is not configured, map themes contact OpenFreeMap directly and place search contacts OpenStreetMap Nominatim directly. Those services receive your IP address, requested tiles or search text, language and approximate search location.</p>
         <p>Our map server does not store your searches or locations in its logs. To keep the app fast, search results are cached for up to 30 days, keyed only by the search term or rounded location, with no link to you or your device.</p>
         <p>We never send your routes, exact coordinates or place notes to analytics or to Superwall. We do not send any of your data to AI services.</p>
         <p>We may disclose data when the law requires it, for example because of a court order, or to protect our rights or someone's safety. If Uncover is sold or merged, this policy continues to apply to your data.</p>
@@ -152,13 +153,13 @@
         <ul>
           <li><strong>To provide the app</strong> (maps, search, subscriptions, abuse prevention): performance of our contract with you, and our legitimate interest in keeping the service secure.</li>
           <li><strong>Accounting records:</strong> legal obligation.</li>
-          <li><strong>Usage analytics:</strong> our legitimate interest in understanding how the app is used and improving it. You can object at any time by turning off analytics (<a href="#rights">section 8</a>).</li>
+          <li><strong>Usage analytics:</strong> our legitimate interest in understanding how the app is used and improving it. Analytics are anonymous and store nothing on your phone, and you can object at any time by turning them off in Settings (<a href="#rights">section 8</a>).</li>
         </ul>
         <p>We only use data for the purposes in this policy. If we ever want to use it for something new, we will ask you first.</p>
 
         <h2 id="tracking">6. Tracking, advertising and sales</h2>
         <p>Uncover shows no ads. We do not track you across other companies' apps or websites, do not use the advertising identifier (IDFA) and do not combine your data with data from other companies.</p>
-        <p>We do not sell or "share" personal data, as those terms are used in US state privacy laws, and we do not use it for targeted advertising. We do not collect health data or your routes on our servers. Place search receives your location rounded to about 100 m, which we cache for up to 30 days without any link to you (section 4).</p>
+        <p>We do not sell or "share" personal data, as those terms are used in US state privacy laws, and we do not use it for targeted advertising. We do not collect Health data or recorded routes on our servers. Place search may receive coordinates rounded to about 100 m, cached without a link to you (<a href="#leaves-your-phone">section 4</a>).</p>
 
         <h2 id="retention">7. How long we keep data</h2>
         <div class="table-wrap">
@@ -181,10 +182,10 @@
         <h2 id="rights">8. Your choices and rights</h2>
         <h3>Your choices</h3>
         <ul>
-          <li><strong>Analytics:</strong> turn off <strong>Settings › Privacy &amp; data › Share usage analytics</strong>. Nothing more is sent after that.</li>
+          <li><strong>Analytics:</strong> turn off <strong>Settings › Privacy &amp; data › Share anonymous usage analytics</strong>. Turning it off stops new usage collection and discards queued events; a request already transmitted cannot be recalled. Necessary purchase processing continues.</li>
           <li><strong>Location, Photos, Health, notifications:</strong> change them in iPhone Settings › Uncover. Turning off Always location stops Auto-reveal; explorations still work while the app is open.</li>
           <li><strong>Delete data on your phone:</strong> delete single explorations, places or imports, or erase everything, in <strong>Settings › Your data</strong>. Deleting the app also deletes the database.</li>
-          <li><strong>Delete data we or our providers hold:</strong> email us with the app ID shown in Settings › Privacy. Because there are no accounts, this ID is the only way we can find your data.</li>
+          <li><strong>Delete data we or our providers hold:</strong> open <strong>Settings › Privacy &amp; data › Privacy request &amp; app ID</strong> to view your app ID and prepare an email to us. Because there are no accounts, this ID is the only way we can find your data. Anonymous analytics are not linked to it, so we cannot find or delete them for a specific person; they contain no personal details.</li>
         </ul>
         <h3>Your rights</h3>
         <p>Under the GDPR and UK GDPR you can ask for access to, correction or deletion of your data, ask us to restrict processing, object to processing and ask for a copy in a portable format. You can export your map and history yourself in Settings › Your data.</p>
@@ -195,7 +196,7 @@
         <p>Superwall, Amplitude and LocationIQ are US companies, and Cloudflare serves the app from data centres worldwide. Transfers rely on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses (with the UK addendum for UK users).</p>
 
         <h2 id="security">10. Security</h2>
-        <p>Data on your phone is encrypted with a key stored in the iPhone Keychain. Backups are encrypted with your password. All network traffic uses HTTPS. Only our team can access analytics and subscription data, and our providers process it under contracts that require them to protect it. If a data breach affects you, we will tell you and the authorities as the law requires.</p>
+        <p>Data on your phone is encrypted with a key stored in the iPhone Keychain. Backups are encrypted with your password. The live database is excluded from automatic iCloud device backups; the app's optional iCloud snapshot excludes Health imports. All network traffic uses HTTPS. Only our team can access analytics and subscription data, and our providers process it under contracts that require them to protect it. If a data breach affects you, we will tell you and the authorities as the law requires.</p>
 
         <h2 id="children">11. Children</h2>
         <p>Uncover is not intended for children under 13 (or the minimum age for consenting to data processing in your country, if higher). We do not knowingly collect their data. If you believe a child has used the app, email us and we will delete their data.</p>
