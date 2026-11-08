@@ -118,17 +118,17 @@
             <tbody>
               <tr>
                 <td>Uncover map server (run by us on Cloudflare)</td>
-                <td>Map themes, offline maps and place search</td>
-                <td>Map tiles for the area on screen or the areas you download. For search: what you type, or your location rounded to about 100 m (for example, for the "You're in" suggestion), and your language. Also your IP address and a random ID that changes every time you open the app, used only to prevent abuse.</td>
+                <td>Map themes, offline maps, place search and directions on map themes</td>
+                <td>Map tiles for the area on screen or the areas you download. For search: what you type, or your location rounded to about 100 m (for example, for the "You're in" suggestion), and your language. For directions on a map theme: your start and end points and your language; they are not stored. Also your IP address and a random ID that changes every time you open the app, used only to prevent abuse.</td>
               </tr>
               <tr>
-                <td>LocationIQ (our place-search provider)</td>
-                <td>Place search and city boundaries</td>
-                <td>Search terms and rounded locations passed on by our server. It never receives your IP address or device details.</td>
+                <td>LocationIQ (our place-search and routing provider)</td>
+                <td>Place search, city boundaries and directions on map themes</td>
+                <td>Search terms, rounded locations and route start and end points passed on by our server. It never receives your IP address or device details.</td>
               </tr>
               <tr>
                 <td>Apple</td>
-                <td>Classic maps, search, directions, payments, iCloud</td>
+                <td>Classic maps, search, directions on Classic maps, payments, iCloud</td>
                 <td>The map area you view, what you search for, route start and end points, purchases and backups. If "Name places I've been" is on (it is by default; you can turn it off in Settings › Privacy &amp; data): approximate centres of visited areas, excluding Apple Health imports, to name them. Apple processes this under <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">its own privacy policy</a>.</td>
               </tr>
               <tr>
@@ -145,7 +145,7 @@
           </table>
         </div>
         <p>When the Uncover map server is not configured, map themes contact OpenFreeMap directly and place search contacts OpenStreetMap Nominatim directly. Those services receive your IP address, requested tiles or search text, language and approximate search location.</p>
-        <p>Our map server does not store your searches or locations in its logs. To keep the app fast, search results are cached for up to 30 days, keyed only by the search term or rounded location, with no link to you or your device.</p>
+        <p>Our map server does not store your searches, locations or routes in its logs. To keep the app fast, search results are cached for up to 30 days, keyed only by the search term or rounded location, with no link to you or your device. Directions are never cached.</p>
         <p>We never send your routes, exact coordinates or place notes to analytics or to Superwall. We do not send any of your data to AI services.</p>
         <p>We may disclose data when the law requires it, for example because of a court order, or to protect our rights or someone's safety. If Uncover is sold or merged, this policy continues to apply to your data.</p>
 
