@@ -66,7 +66,7 @@
           <ul>
             <li><strong>No account.</strong> You never give us an email or password. The first name you enter stays on your iPhone.</li>
             <li><strong>Your prayers and history are stored on your iPhone.</strong> Your answers, check-ins, prayers, verses and streak are kept on your phone.</li>
-            <li><strong>AI prayers are optional and for adults.</strong> Only if you are 18 or older and allow it, some of your answers are sent to our server and to Google Gemini to write a prayer. Your name is never sent. You can turn this off at any time.</li>
+            <li><strong>AI prayers are optional and for adults.</strong> Only if you are 18 or older and allow it, some of your answers are sent to our server and to Claude, an AI service from Anthropic, to write a prayer. Your name is never sent. You can turn this off at any time.</li>
             <li><strong>We never learn which apps you block.</strong> Apple's Screen Time keeps your app selection on your phone.</li>
             <li><strong>No ads, no tracking, no data sales.</strong> We do not use the advertising identifier, and we do not sell or share your data for advertising.</li>
           </ul>
@@ -104,8 +104,8 @@
           <li>your faith tradition;</li>
           <li>the struggles and goals you selected.</li>
         </ul>
-        <p>This goes to our server, hosted on Amazon Web Services in the USA, which passes it to Google's Gemini API to generate the prayer text. <strong>Your name, your app ID and your blocked apps are never sent.</strong> As with any internet request, your IP address is visible to our server.</p>
-        <p>Our server does not store your answers or the prayer. The prayer is saved only on your phone. Google processes the request under its <a href="https://ai.google.dev/gemini-api/terms" rel="noopener noreferrer">Gemini API terms</a>.</p>
+        <p>This goes to our server, hosted on Amazon Web Services in the USA, which passes it to Anthropic's Claude API to generate the prayer text. <strong>Your name, your app ID and your blocked apps are never sent.</strong> As with any internet request, your IP address is visible to our server.</p>
+        <p>Our server does not store your answers or the prayer. The prayer is saved only on your phone. Anthropic processes the request under its <a href="https://www.anthropic.com/legal/commercial-terms" rel="noopener noreferrer">Commercial Terms of Service</a>.</p>
         <p>If you do not allow it, or turn it off, nothing is sent and you pray a classic prayer stored in the app.</p>
 
         <h2 id="leaves-your-phone">4. What leaves your phone</h2>
@@ -121,7 +121,7 @@
                 <td>Your check-in, faith tradition, struggles and goals, and your IP address. Your answers are not stored.</td>
               </tr>
               <tr>
-                <td>Google (Gemini API, USA)</td>
+                <td>Anthropic (Claude API, USA)</td>
                 <td>Generating the prayer text, only if you allow it</td>
                 <td>The same answers, passed on by our server. It does not receive your IP address, device details or name.</td>
               </tr>
@@ -162,7 +162,7 @@
             <tbody>
               <tr><td>Data on your phone</td><td>Until you delete it in Settings › Delete account.</td></tr>
               <tr><td>Prayer server</td><td>Not stored. Technical error logs contain none of your answers.</td></tr>
-              <tr><td>Google (Gemini API)</td><td>Under Google's Gemini API terms.</td></tr>
+              <tr><td>Anthropic (Claude API)</td><td>Under Anthropic's Commercial Terms of Service.</td></tr>
               <tr><td>Superwall</td><td>While you have a subscription, then as long as Latvian accounting law requires (usually 5 years).</td></tr>
               <tr><td>Apple</td><td>Under Apple's own policies.</td></tr>
             </tbody>
@@ -184,7 +184,7 @@
         <p>Email <a href="mailto:contact@fourplex.org">contact@fourplex.org</a>. We reply within one month. You can also complain to a data protection authority, for example the one in your country.</p>
 
         <h2 id="transfers">9. Transfers outside the EU</h2>
-        <p>Superwall, Amazon Web Services and Google are US companies. Transfers rely on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses (with the UK addendum for UK users).</p>
+        <p>Superwall, Amazon Web Services and Anthropic are US companies. Transfers rely on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses (with the UK addendum for UK users).</p>
 
         <h2 id="security">10. Security</h2>
         <p>Your profile is stored in the iPhone Keychain, and your prayers and history in the app's private storage on your phone. All network traffic uses HTTPS. Our providers process data under contracts that require them to protect it. If a data breach affects you, we will tell you and the authorities as the law requires.</p>
